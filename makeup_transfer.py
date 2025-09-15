@@ -20,7 +20,7 @@ from utils.align_utils import run_alignment
 import torch.nn.functional as F
 import time
 import lpips
-
+# from diffglam import *
 
 class DiffAM_MT(object):
     def __init__(self, args, config, device=None):
@@ -32,6 +32,12 @@ class DiffAM_MT(object):
                 "cuda") if torch.cuda.is_available() else torch.device("cpu")
         self.device = device
 
+        '''
+        self.emsff=EMSFF(in_channels=3,out_channels=3)
+        self.lossatt = EGLA(channels=3)
+        self.elark = ElarK(c1 =3, c2=3)
+        '''
+        
         self.model_var_type = config.model.var_type
 
         self.target_id = args.target_img
