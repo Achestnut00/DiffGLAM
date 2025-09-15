@@ -1,5 +1,6 @@
 # DiffGLAM: Adversarial Makeup via Diffusion with Efficient Global-Local Attention for Facial Privacy Protection
 
+## After the paper is accepted, we will further improve the code in detail
 
 ## Abstract
 
@@ -21,7 +22,7 @@ pip install git+https://github.com/openai/CLIP.git
 
 ## Pretrained models and datasets
 
-- The weights required for the execution of DiffAM can be downloaded [here](https://drive.google.com/drive/folders/1L8caY-FVzp9razKMuAt37jCcgYh3fjVU?usp=sharing). 
+
 
 ```shell
 mkdir pretrained
@@ -31,13 +32,13 @@ mv model_ir_se50.pth pretrained/
 mv shape_predictor_68_face_landmarks.dat pretrained/
 ```
 
-- Please download the target FR models, MT-datasets and target images [here](https://drive.google.com/file/d/1IKiWLv99eUbv3llpj-dOegF3O7FWW29J/view?usp=sharing). Unzip the assets.zip file in `DiffAM/assets`.
-- Please download the [CelebAMask-HQ](https://drive.google.com/file/d/1badu11NqxGf6qM3PTTooQDJvQbejgbTv/view) dataset and unzip the file in `DiffAM/assets/datasets`.
+- Please download the target FR models, MT-datasets and target images [here](https://drive.google.com/file/d/1IKiWLv99eUbv3llpj-dOegF3O7FWW29J/view?usp=sharing). Unzip the assets.zip file in `DiffGLAM/assets`.
+- Please download the [CelebAMask-HQ](https://drive.google.com/file/d/1badu11NqxGf6qM3PTTooQDJvQbejgbTv/view) dataset and unzip the file in `DiffGLAM/assets/datasets`.
 
 The final project should be like this:
 
 ```shell
-DiffAM
+DiffGLAM
   └- assets
      └- datasets
      	└- CelebAMask-HQ
